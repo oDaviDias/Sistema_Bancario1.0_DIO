@@ -35,13 +35,13 @@ while True:
         saque = float(input("Informe o valor a ser sacado:"))
 
         if saque > saldo:
-            print("Operação não realizada, o valor solicitado é maior que o saldo disponível!")
+            print(f"Operação não realizada, pois R${saque} é maior que o saldo disponível!")
 
         elif saque > limite:
-            print("Operação não realizada, o valor solicitado excede o limite!")
+            print(f"Operação não realizada, pois R${saque} excede o limite!")
 
         elif numero_saques >= LIMITE_SAQUES:
-            print("Operação não realizada, você excedeu o limite de saques diários!")
+            print("Operação não realizada, você excedeu o limite de 3 saques diários!")
 
         else:
             saldo -= saque
@@ -71,3 +71,4 @@ while True:
 
     else:
         print("Operação inválida, por favor selecione novamente a operação desejada!")
+
