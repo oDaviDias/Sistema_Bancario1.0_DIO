@@ -24,8 +24,8 @@ while True:
 
         if valor >= 0:
             saldo += valor
-            extrato += f"Deposito no valor de R${valor}"
-            print(f"O saldo atual é de {saldo}")
+            extrato += f"\nDeposito no valor de R${valor}."
+            print(f"O saldo atual é de {saldo}.")
 
         else:
             print("O valor informado é inválido")
@@ -45,15 +45,15 @@ while True:
 
         else:
             saldo -= saque
-            extrato += f"\nSaque no valor de R${saque}"
+            extrato += f"\nSaque no valor de R${saque}."
             numero_saques += 1
-            print(f"Saque realizado com sucesso! Saldo atual: {saldo}")
+            print(f"Saque realizado com sucesso! Saldo atual: {saldo}.")
 
 
     elif opcao == "3":
 
         if extrato == "":
-            print("\nNão foram realizadas nenhuma movimentação hoje.")
+            print("\nNão foi realizada nenhuma movimentação hoje.")
 
         else:
             print(f''' 
@@ -70,4 +70,4 @@ while True:
         break
 
     else:
-        print("Operação inválida, por favor selecione novamente a operação desejada")
+        print("Operação inválida, por favor selecione novamente a operação desejada!")
